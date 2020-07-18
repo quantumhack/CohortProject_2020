@@ -91,8 +91,8 @@ def get_molecular_data(mol, geometry, xyz_format=False):
         #geometry represents the angle in this mol
         r = 1.738
         angle = math.radians(geometry)
-        x = r * math.sin((math.pi - angle) / 2)
-        y = r * math.cos((math.pi - angle) / 2)
+        x = 2 * r * math.cos(angle/2)
+        y = 2 * r *math.sin(angle/2)
         mol_data = [
             ['H', [0, 0, 0]],
             ['H', [0, 0, y]],
