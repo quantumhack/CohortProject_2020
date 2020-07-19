@@ -43,20 +43,20 @@ In recent years, there has been a significant increase in the demand for chip dr
 
 **Target Customers:** Companies engaged in large-scale manufacturing of semiconductors and integrated circuits (IC) interested in innovation:
 
-Intel Corporation
-Revenue: $72 billions [[Intel]]
-Samsung
-Revenue: $218 billion U.S. dollars [[Samsung]]
-Texas Instruments
-    Revenue: $14 billions [[Forbes]]
-Advanced Micro Devices (AMD)
-Revenue: $6 billions [[AMD]]
-IBM
-Revenue: $77 billions [[IBM]]
-Toshiba
-Revenue: $33 billions [[Macrotrends]]
-Nvidia
-Revenue: $11 billions [[Forber]]
+- Intel Corporation
+Revenue: $72 billions [[Intel]](https://www.intc.com/investor-relations/investor-education-and-news/investor-news/press-release-details/2020/Intel-Reports-Fourth-Quarter-2019-Financial-Results/#:~:text=In%202019%2C%20Intel%20generated%20a,revenue%20of%20approximately%20%2419.0%20billion.)
+- Samsung
+Revenue: $218 billion U.S. dollars [[Samsung]](https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2019-results)
+- Texas Instruments
+    Revenue: $14 billions [[Forbes]](https://www.forbes.com/sites/greatspeculations/2020/01/28/after-dropping-in-2019-can-texas-instruments-revenue-cross-15-billion-by-2021/#65a5b52b642c)
+- Advanced Micro Devices (AMD)
+Revenue: $6 billions [[AMD]](https://ir.amd.com/news-releases/news-release-details/amd-reports-fourth-quarter-and-annual-2019-financial-results)
+- IBM
+Revenue: $77 billions [[IBM]](https://newsroom.ibm.com/2020-01-21-IBM-Reports-2019-Fourth-Quarter-and-Full-Year-Results#:~:text=Full%2DYear%202019%20Results&text=Consolidated%20net%20income%20was%20%249.4,for%20the%20full%2Dyear%202018.)
+- Toshiba
+Revenue: $33 billions [[Macrotrends]](https://www.macrotrends.net/stocks/charts/TOSYY/toshiba/revenue)
+- Nvidia
+Revenue: $11 billions [[Forber]](https://www.forbes.com/sites/greatspeculations/2020/01/07/after-growing-almost-70-over-the-last-2-years-why-is-nvidias-revenue-expected-to-grow-only-4-by-2021/#6d5bbb1b79b8)
 
 ## Step 4: Prepare a 90 second video explaining the value proposition of your innovation to this potential customer in non-technical language
 
