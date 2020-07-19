@@ -82,6 +82,20 @@ def get_molecular_data(mol, geometry, xyz_format=False):
             ['H', [-x, y, 0]],
             ['H', [x, y, 0]]
         ]
+    elif mol == 'h2o_pennylane':
+        # Giving symmetrically stretch H2O. ∠HOH = 107.6°
+        # Geometry is distance between H-O
+        angle = 107.6 / 2
+        angle = math.radians(angle)
+        x = geometry * math.sin(angle)
+        y = geometry * math.cos(angle)
+        mol_data = [
+            [3],
+            ['Water'],
+            ['H', [-x, y, 0]],
+            ['O', [0, 0, 0]],
+            ['H', [x, y, 0]]
+        ]
     elif mol == 'n2':
         mol_data = [
             ['N', [0, 0, 0]],
