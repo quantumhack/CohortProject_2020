@@ -60,10 +60,9 @@ Revenue: $11 billions [[Forber]](https://www.forbes.com/sites/greatspeculations/
 
 ## Step 4: Prepare a 90 second video explaining the value proposition of your innovation to this potential customer in non-technical language
 
-Link to video:
+Link to video: https://youtu.be/5AEUMR-K0BI 
 
-https://youtu.be/5AEUMR-K0BI 
-
+[![](http://img.youtube.com/vi/5AEUMR-K0BI/0.jpg)](http://www.youtube.com/watch?v=5AEUMR-K0BI "")
 
 
 
