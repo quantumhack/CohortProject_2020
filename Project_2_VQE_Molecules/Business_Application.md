@@ -24,6 +24,7 @@ The main goal of this exercise was to implement VQE in order to find the paramet
 We performed this task for H2, LiH and H4. Additionally, further challenges were addressed.
 - We explored the framework Qulacs to simulate noise aware quantum systems in order to find the first excited state of a H2 molecule, by using VQE and orthogonality with the fundamental state.
 - We analyzed and solved the Max-Cut problem with VQE. This problem is known to be NP-complete and can be significantly sped up with hybrid methods.
+- We used PennyLane framework to find the  ground state of the H$_2$O molecule with FCI and tapering techniques.
 
 ## Step 2: Explain or provide examples of the types of real-world problems this solution can solve
 VQE provides an enormous speed up for certain optimization problems. Among these, the Max-Cut problem is of significant importance for circuit design. Better solutions to these problems would have an enormous impact both on scalability and cost reductions for technological developers.
