@@ -14,7 +14,7 @@ The main goal of this exercise was to implement VQE in order to find the paramet
     - Hartree Fock, where a single Slater determinant is proposed (no correlations)
     - Coupled Cluster methods, which are a refinement of Hartree Fock where one and two body operators are considered.
     - We also considered exact solutions, known as Full configuration interactions, where all interactions are considered.
-    ![LiH](../LiH.jpg)
+    ![LiH](../Project_2_VQE_Molecules/LiH.jpg)
 - Then we analysed the corresponding qubit Hamiltonian using Jordan Wigner. The tapering technique was introduced to lower the complexity of the resulting operator by exploiting symmetries.
 - In order to use VQE, we must generate the unitaries. In this task we explored 2 types, choosing between sto-3g and sto-6g basis depending on the molecule and its complexity:
     - Unitary Coupled Cluster: a direct generalization of the Coupled Cluster method. This is a “fermionic” approach.
@@ -26,60 +26,43 @@ We performed this task for H2, LiH and H4. Additionally, further challenges were
 - We analyzed and solved the Max-Cut problem with VQE. This problem is known to be NP-complete and can be significantly sped up with hybrid methods.
 
 ## Step 2: Explain or provide examples of the types of real-world problems this solution can solve
+VQE provides an enormous speed up for certain optimization problems. Among these, the Max-Cut problem is of significant importance for circuit design. Better solutions to these problems would have an enormous impact both on scalability and cost reductions for technological developers.
 
-Applications of optimizing molecular data simulation:
-- **Pharmaceutical & Materials Science applications**: optimizing drug and molecule discovery 
-    - Advantages for expanding and speeding up drug and molecule discovery R&D:
-        - Molecular structure analysis for complex molecules useful for chemical and drug R&D
-        - Protein design using unconstrained discrete optimization [[1]](https://www.zapatacomputing.com/solutions/) [[2]](https://www.sciencedirect.com/science/article/pii/S0004370214000332)
-        - Simulations for molecular binding affinity prediction in drug discovery [[1]](https://www.zapatacomputing.com/solutions/) [[4]](https://link.springer.com/article/10.1007/s10822-010-9363-3)
-        - Transition state analysis for catalytic reaction simulation [[1]](https://www.zapatacomputing.com/solutions/) [[5]](https://pubs.acs.org/doi/abs/10.1021/jp020326p?casa_token=SMtIra4cJp8AAAAA:aaeP5ToKdgk_0pbqIG-KrYsixjmVuJuSSE-q0Tf-Rgc4pURIpx1DhilqmoLIAI7OLZoKpiZKe7uKT1fw)
-        - Determination of the crystalline structure of organic molecules [[1]](https://www.zapatacomputing.com/solutions/) [[6]](https://link.springer.com/content/pdf/10.1007/978-3-319-05774-3.pdf) [[7]](https://www.nature.com/articles/ncomms1451.)
-        - Molecular screening in drug discovery using continuous latent space [[1]](https://www.zapatacomputing.com/solutions/) [[3]](https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-9-71)
-        - Minimizes the massive R&D costs used to search for novel molecules by exponentially reducing the number of data points necessary for simulations
-    - Quantum Computing implementation (future research expansion):
-        - Additionally, with more advanced quantum computing hardware, drug development times could be **sped up by 20%** and **drug approval rates could double** using similar molecular simulation optimizations [[BCG, 2019]](https://www.bcg.com/en-us/publications/2018/coming-quantum-leap-computing.aspx)
-            - We will have a stake in the quantum advantage by expanding research to be compatible with quantum resources, like our D-Wave optimization work
-
-
-- Other industries (financial, telecom, energy, etc.) have the potential to benefit from the optimization with further work to effectively map their complex data sets into a Hamiltonian. 
-
-
+- Microprocessors and Memory chips have a combined market share of approximately 330 billion dollars of revenue per year, with fast increasing numbers. [[1]](https://www.grandviewresearch.com/industry-analysis/microprocessor-market) [[2]](https://www.globenewswire.com/news-release/2020/02/07/1981735/0/en/Global-Memory-Chips-Market-Worth-241-Billion-by-2023-Rising-at-a-CAGR-of-22.html)
+- Inside each of these components, there are up to 2 trillion transistors [[3]](https://ourworldindata.org/uploads/2019/05/Transistor-Count-over-time-to-2018.png). The way in which these transistors are distributed is fundamental for the scalability and correct functioning of the chips. This problem is known as Very Large Scale Integration (VLSI).  
+- Due to lithography and etch issues with scaling, design rules for layout have become increasingly stringent. Nowadays, computers are used to simulate and find optimal strategies. 
+- These geometry problems can be reduced to the Max-Cut problem in graphs [[4]](https://www.jstor.org/stable/170992?seq=1)[[5]](https://www.semanticscholar.org/paper/Network-Design-Using-Cut-Inequalities-Barahona/b683bc4caf9225056c78af45f9748de2648555e6), which are known to be NP-complete [[6]](https://dl.acm.org/doi/10.1145/800157.805047)
+- VQE methods use hybrid classical-quantum technologies to solve Max-Cut problems with significant speed ups. 
+- Providing better mathematical solutions would allow for smaller and more efficient chips.
 
 ## Step 3: Identify at least one potential customer for this solution - ie: a business who has this problem and would consider paying to have this problem solved
 
+In recent years, there has been a significant increase in the demand for chip driven products. Seeing this phenomenal market demand and with the design and manufacturing market (both domestic and international) expanding rapidly, there is an enhanced demand for algorithms that improve the optimization and design techniques that are used today.
 
-**Market Opportunity:** The Boston Consulting Group [[BCG, 2019]](https://www.bcg.com/en-us/publications/2018/coming-quantum-leap-computing.aspx) predicts that quantum simulations could represent an addressable market in pharmaceuticals of up to **$20 billion** by 2030 with **another $7 billion** coming from chemicals, materials science, and other materials science–intensive industries. 
-    
+**Market Opportunity:** The integrated circuits market has grown continuously from its beginning to the present. In 2019, the market reached 330 billion dollars in revenues and this value is estimated to continue growing in the coming years according to the business data platform Statista.
 
-**Target Customers:** Pharmaceutical, chemical, and materials science companies with high R&D costs, who closely align innovation with business strategy
+**Target Customers:** Companies engaged in large-scale manufacturing of semiconductors and integrated circuits (IC) interested in innovation:
 
-- Big Pharma
-    - Pfizer
-        - Revenue: $52 billion [[Pfizer 10-K, 2019]](http://d18rn0p25nwr6d.cloudfront.net/CIK-0000078003/dee171a3-b766-46e8-a807-dab4c7fb1895.pdf)
-        - R&D: $8.7 billion (85% of costs)
-    - Roche
-        - Revenue: $65 billion [[Roche Annual Report, 2019]](https://www.roche.com/dam/jcr:a3545548-a7f9-40f4-a70e-7266a363f856/en/ar19e.pdf)
-        - R&D: $12.4 billion (30% of costs)
-    - Merck
-        - Revenue: $47 billion [[Merck 10-K, 2020]](http://d18rn0p25nwr6d.cloudfront.net/CIK-0000064978/75a322e0-ce26-478b-954f-5da950e9d365.pdf)
-        - R&D: $9.9 billion (70% of costs)
-    
-- Big Chemicals & Materials Science Companies
-    - BASF 
-        - Revenue: $67 billion [[BASF Annual Report, 2019]](https://www.basf.com/global/documents/en/news-and-media/publications/reports/2020/BASF_Report_2019.pdf)
-        - R&D: $5.9 billion (22% of costs) 
-    - 3M
-        - Revenue: $31 billion [[3M 10-K, 2020]](http://d18rn0p25nwr6d.cloudfront.net/CIK-0000066740/d02f076e-a2bb-49af-b19b-ad4aebfd51fb.pdf)
-        - R&D: $1.8 billion (11% of costs)
-    - DuPont
-        - Revenue:$22 billion [[DuPont 10-K, 2019]](https://s23.q4cdn.com/116192123/files/doc_financials/2019/Q4/DuPont-2019-10-K-(Final).pdf)
-        - R&D: $955 million (7% of costs) 
-    - PetroChina
-        - Revenue: $359 billion [[PetroChina Annual Report, 2019]](http://www.petrochina.com.cn/ptr/ndbg/202004/a11e316ca2bd49bab9e2a55a58c02add/files/3a74f5fb90284053ac786919340f41b0.pdf)
-        - R&D: $3.1 billion (0.9% of costs) 
-    
+Intel Corporation
+Revenue: $72 billions [[Intel]]
+Samsung
+Revenue: $218 billion U.S. dollars [[Samsung]]
+Texas Instruments
+    Revenue: $14 billions [[Forbes]]
+Advanced Micro Devices (AMD)
+Revenue: $6 billions [[AMD]]
+IBM
+Revenue: $77 billions [[IBM]]
+Toshiba
+Revenue: $33 billions [[Macrotrends]]
+Nvidia
+Revenue: $11 billions [[Forber]]
 
 ## Step 4: Prepare a 90 second video explaining the value proposition of your innovation to this potential customer in non-technical language
 
 Link to video:
+
+
+
+
+
